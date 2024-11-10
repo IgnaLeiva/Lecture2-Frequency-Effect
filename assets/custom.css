@@ -1,0 +1,313 @@
+.info-box {
+  position: relative;
+  background-color: transparent;
+  font-size: 40px;
+  font-weight: 100; 
+  color: black;
+  border: 1px solid #355070; 
+  padding: 20px;
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  width: 220px;
+  height: 100px;
+  box-shadow: 3px 0px 3px 0px rgba(0, 0, 0, 0.2);
+}
+
+.container-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*
+.reveal .footer > * {
+	background-color: #006682;
+	color: white;
+} */
+
+.container-footer {
+  color: #ffffff;
+  background-color: #14355d;
+  position: absolute;
+  height: 50px;
+  bottom: -40px; /* Position the footer at the bottom of each slide */
+  left: -100px;
+  margin-bottom:  0px !important;
+  border-radius: 0px 5px 0px 0px;
+  width: 50%;
+  padding: 0px 0; /* Space inside the footer for aesthetics */
+  text-align: center; /* Center-align footer text */
+  font-size: 0.8em; /* Slightly smaller font for a footnote look */
+  z-index: 20; /* Ensure it stays in the background layer */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-container,
+.content-container {
+  display: flex;
+  width: 90%; /* Adjust this to your preferred width */
+  gap: 0px; /* Remove space between columns */
+  opacity: 0.8;
+}
+
+.box {
+  font-size: 40px;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  margin-right: 0px; /* Space between boxes */
+}
+
+.box-white {
+  font-size: 40px;
+  color: #14355d;
+  border: none;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0px; /* Space between boxes */
+}
+
+.box:last-child {
+  margin-right: 0; /* Remove margin for the last box in a row */
+}
+
+.header-box {
+  background-color: #355070;
+  height: 50px;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 40px 0px 0px 0px;
+}
+
+.header-box-large {
+  border-radius: 0px 40px 0px 0px;
+}
+
+.content-box {
+  height: 70px;
+  background-color: #376996;
+  font-size: 23px;
+  font-weight: 100;
+  border-radius: 0;
+}
+
+.content-box-2 {
+  background-color: #4C638E;
+}
+
+.content-box-3 {
+  background-color: #376996;
+}
+
+.content-box-4 {
+  background-color: #4C638E;
+}
+
+.content-box-5 {
+  background-color: #376996;
+  border-radius: 0px 0px 0px 40px;
+}
+
+/* Adjust width ratios for left and right boxes */
+.box-left {
+  flex:2; /* Makes the left boxes wider */
+}
+
+.box-right {
+  flex: 9; /* Makes the right boxes narrower */
+}
+
+
+.container2{
+  display: flex;
+  gap: 20px;
+  font-size: 25px;
+}
+.col{
+  flex: 1;
+  text-align: center;
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+}
+
+.grid-container2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-flow: row;
+  gap: 100px;
+  text-align: left;
+}
+//*
+.grid-container2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  max-width: 1000px;
+  margin: auto;
+} *//
+
+.grid-item {
+  display: flex;
+  align-items: flex-start; 
+  gap: 10px;
+}
+
+.grid-item i {
+  font-size: 40px;
+  opacity: 0.5: #355070;
+  opacity: 0.5;
+}
+
+.grid-item h3 {
+  margin: 0;
+  font-size: 25px;
+  color: #002046;
+  font-weight: bold;
+}
+
+.grid-item p {
+  margin: 5px 0;
+  color: #333;
+  font-size: 20px;
+}
+
+
+.box-box {
+  align-items: flex-start;
+  background-attachment:scroll; 
+  background-clip: border-box;
+  background-image: none;
+  background-origin: padding-box;
+  background-repeat: repeat;
+  background-size: auto;
+  border-bottom-color: rgb(24, 49, 83);
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-image-outset: 0;
+  border-image-repeat: stretch;
+  border-image-slice: 100%;
+  border-image-source: none;
+  border-image-width: 1;
+  border-left-color: rgb(24, 49, 83);
+  border-left-style: solid;
+  border-left-width: 2px;
+  border-right-color: rgb(24, 49, 83);
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-top-color: rgb(24, 49, 83);
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  border-top-style: solid;
+  border-top-width: 2px;
+  box-shadow: rgb(24, 49, 83) 0px 6px 0px 0px; 
+  box-sizing: border-box;
+  color: rgb(24, 49, 83);
+  cursor: pointer;
+  display: block;
+  font-family: 'cera-round-pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 35px;
+  font-size-adjust: none;
+  font-stretch: 100%;
+  font-style: normal;
+  font-weight: 200;
+  height: 70px;
+  letter-spacing: normal;
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 15px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 15px;
+  position: relative;
+  text-align: center;
+  text-decoration-color: rgb(24, 49, 83);
+  text-decoration-line: none;
+  text-decoration-style: solid;
+  text-indent: 0px;
+  text-shadow: none;
+  text-transform:; none;
+  transition-duration: 0s;
+  transition-property all
+  transition-timing-function: ease-in;
+  user-select: none;
+  vertical-align: middle;
+  width: 668px; 
+  word-spacing: 0px; 
+  
+      /* Center text horizontally and vertically */
+  display: flex;          /* Use flexbox */
+  justify-content: center;/* Center horizontally */
+  align-items: center;    /* Center vertically */
+  text-align: center;     /* Ensure text alignment is centered */
+
+}
+
+.box-box:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  box-shadow: 3px 3px;
+  cursor: pointer;
+}
+
+
+
+.background-fm {
+  background: #16bffd; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #16bffd, #cb3066); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #16bffd, #cb3066); /* W */
+}
+
+
+.remark-slide-content {
+  background-color: #FAFAFA;
+  border-top: 80px solid #23373B;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.5;
+  padding: 1em 2em 1em 2em
+}
+
+.remark-slide-content > h1 {
+  font-family: 'Fira Sans';
+  font-weight: normal;
+  font-size: 45px;
+  margin-top: -95px;
+  margin-left: -00px;
+  color: #FAFAFA;
+}
+
+.table, th, td {
+  border:1px solid black;
+  border-collapse: collapse;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  border-bottom: 1px solid black; /* Ensures a border at the table's bottom */
+}

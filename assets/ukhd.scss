@@ -1,0 +1,188 @@
+/*-- scss:defaults --*/
+// importing fonts
+/*-- @import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Lato&family=Yanone+Kaffeesatz&display=swap');--*/
+
+@import url(./fonts/source-sans-pro/source-sans-pro.css);
+section.has-dark-background, section.has-dark-background h1, section.has-dark-background h2, section.has-dark-background h3, section.has-dark-background h4, section.has-dark-background h5, section.has-dark-background h6 {
+  color: #fff;
+}
+
+
+// fonts
+/*-- $font-family-sans-serif: Source Sans Pro, Helvetica, sans-serif;--*/
+$font-family-sans-serif: Helvetica, sans-serif;
+
+
+
+// headings
+$presentation-heading-font: Source Sans Pro, Helvetica, sans-serif;
+$presentation-heading-color: rgb(0, 74, 111) !default;
+$presentation-heading-align: left !default;
+$presentation-heading-font-weight: 400;
+
+$h1-font-size: 1.6em !default;
+$h2-font-size: 1.3em !default;
+$h3-font-size: 1.15em !default;
+
+
+//code
+$code-color: rgb(0, 74, 111) !default;
+//$font-family-monospace: 'Inconsolata', monospace  !default;
+$font-family-sans-serif: sans-serif !default;
+
+// general  
+$body-bg: #fff;
+$body-color: rgb(84, 84, 85);
+$link-color: rgb(0, 74, 111);
+$link-color-hover: #6ca0e8;
+$presentation-font-size-root: 35px;
+
+/*-- scss:rules --*/
+
+.math.inline {
+  font-size: 50%  !important;
+  color: $body-bg;
+  font-family: $presentation-heading-font;
+  font-weight:  $presentation-heading-font-weight;
+}
+
+
+.math.display .MathJax {
+  font-size: 40%  !important;
+}
+
+.reveal pre code {
+  background-color: transparent;
+  color: #001845;
+  font-size: 1.5em;
+  padding: 0.5em;
+  line-height: 1.4em;
+}
+
+
+.subtitle {
+  color: $body-bg;
+  font-size: $h2-font-size;
+  font-family: $presentation-heading-font;
+}
+
+.author {
+  color: $body-bg;
+  font-size: $h2-font-size;
+  font-family: $presentation-heading-font;
+}
+
+/*-- 
+
+.footer {
+    position: fixed;
+    bottom:0px;
+    height: 40px;
+    width: 500% !important;
+    margin: 0 auto;
+    text-align: center;
+    border-top: 2px solid #6ce6d5;
+    background: white;
+    z-index: 100;
+} --*/
+
+/*-- 
+
+.footer {
+  position: absolute;
+  font-family: $presentation-heading-font;
+  padding-top: 0.5em;
+  padding-bottom: 1.5em;
+  text-align: left;
+} --*/
+
+
+
+/*-- 
+.reveal .footer {
+    font-family: $presentation-heading-font;
+    display: block;
+    position: fixed;
+    bottom: 18px;
+    width: 100%;
+    margin: 0px -20px;
+    text-align: right;
+    font-size: 18px;
+    z-index: 2;
+} --*/
+
+.reveal .slide-number {
+  font-family: $presentation-heading-font;
+
+}
+
+.reveal .panel-tabset [role=tab] {
+    font-size: 0.8em;
+}
+
+
+.reveal .footer {
+    color: rgb(0, 74, 111);
+    text-align: left;
+    font-size: 0.2em; 
+}
+
+
+
+
+
+/*-- 
+h1, h2, h3 {
+  text-align: $presentation-heading-align;
+} --*/
+
+h1, h2 {
+  text-align: $presentation-heading-align;
+} 
+
+
+
+.center-x{
+    text-align: center;
+}
+
+section.has-dark-background a, section.has-dark-background a:hover {
+    color: #fee4ff;
+}
+
+
+.slide-logo {
+  display: block !important;
+  position: fixed !important;
+  bottom: 5px !important;
+  right: 5px !important;
+  
+  max-height: 10% !important;
+  /*--
+  height: 45% !important;
+  width: auto !important;
+  color: $body-color !important;--*/
+} 
+
+.slide-number, .reveal.has-logo .slide-number {
+  bottom: 10px !important;
+  right: 10px !important;
+  top: unset !important;
+  color: $body-color !important;
+}
+
+p {
+  font-weight: 100;
+}
+
+ul {
+  font-weight: 100;
+}
+
+ul li::marker {
+  color: #d2c01f; /* Change to any color you like */
+}
+
+
+
+
