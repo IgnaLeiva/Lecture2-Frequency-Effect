@@ -1668,6 +1668,7 @@ CHD among non-smokers</li>
 <span style="color: #a50e58; font-size: 16px; margin-right: 530px"> | Relative measures</span>
 :::
 
+## Which one we should use
 
 ## {}
 
@@ -1679,3 +1680,6 @@ Measure of Effect - __Confounding__ - Measure of Association
 <span style="font-weight: 900; color: rgb(84, 84, 84); display: inline;">ASSOCIATION & CONFOUNDING</span>
 <span style="color: #a50e58; font-size: 16px; margin-right: 530px"> | Introduction</span>
 :::
+
+
+
