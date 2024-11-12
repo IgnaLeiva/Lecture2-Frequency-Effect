@@ -488,10 +488,11 @@ The value of the IR depends on the time unit being used. E.g., 100 events per 1 
   ![](images/image2.png){.relative top="0" width="750" height="250"}  
 </div>
 
+
 <div style="position: absolute; font-size: 20px; color: #4D1354; bottom: 250px;">
 $$ \boldsymbol{IR} = \frac{3}{\text{17 Person-Year}} = 0.176
 $$
-</div>
+</div> 
 
 <div style="position: absolute; font-size: 25px; color: #4D1354; bottom: 270px; left: 400px">
 Interpretation: __17,6 cases per 100 person−year__
@@ -778,7 +779,7 @@ __Relative Measures__
 
 <br><br>
 
-<div style="font-size: 30px; color: #a50e58; font-weight: 100;">
+<div style="font-size: 25px; color: #a50e58; font-weight: 100;">
 $$ 
 \frac{\text{Health indicator risk in exposed}}{\text{Health indicator risk in unexposed}}
 $$
@@ -792,7 +793,7 @@ __Absolute Measures__
 
 <br><br>
 
-<div style="font-size: 30px; color: #a50e58;">
+<div style="font-size: 25px; color: #a50e58;">
 
 $$ 
 \left( \begin{array}{c} \text{Health indicator} \\ \text{risk in exposed} \end{array} - \begin{array}{c} \text{Health indicator} \\ \text{risk in unexposed} \end{array} \right)
@@ -942,7 +943,7 @@ data %>%
 :::
 :::
 
-<div style="position: absolute; font-size: 23px; bottom:60px;">
+<div style="position: absolute; font-size: 23px; bottom:100px;">
 
 $$ 
 Risk_{smokers} =\frac{95}{3000} = 0.0317
@@ -1091,6 +1092,8 @@ ggplot(data, aes(x = rr, y = study)) +
 :::
 ::: {.column width="50%"}
 
+<!--
+
 <div style="font-size: 18px;">
 $$
 P(\text{CHD} \mid \text{smoker+}) = \frac{95}{3000} =0.032 \times 1000 = 32
@@ -1106,8 +1109,12 @@ $$
 
 
 </div>
+
+-->
 :::
 ::: 
+
+<!--
 
 <div class="fragment" style="position: absolute; bottom: 100px;">
 <p style="font-size: 24px; font-weight: 900;">Interpretation</p>
@@ -1119,6 +1126,8 @@ CHD among non-smokers</li>
 <li class="fragment">\% Increase = (RR- 1)x100, (2.13 -1)x100 = 113\% increase in risk. [\% Decrease = (1 - RR)x100]</li>
 </ul>
 </div>
+
+-->
 
 ::: {.notes}
 The phrases "2.13 times as high" and "2.13 times higher" differ in subtle ways, though they might seem interchangeable at first glance.
@@ -1397,6 +1406,7 @@ Relative Risk?”)
 :::
 ::: {.column width="50%"}
 
+<!--
 <div style="font-size: 18px;">
 
 $$
@@ -1416,9 +1426,12 @@ $$
 $$
 
 </div>
+
+-->
 :::
 ::: 
 
+<!--
 <div class="fragment" style="position: absolute; bottom: 100px;">
 <p style="font-size: 24px; font-weight: 900;">Interpretation</p>
 <ul style="font-size: 22px; font-weight: 100;">
@@ -1428,7 +1441,7 @@ $$
 </li>
 </ul>
 </div>
-
+-->
 :::{.footer style="background-color: rgba(181, 101, 118, 0.3); color: rgb(84, 84, 84); padding: 10px; padding-left: 70px;text-align: left; font-size: 12px;"}
 <span style="font-weight: 900; color: rgb(84, 84, 84); display: inline;">MEASURES OF EFFECT</span>
 <span style="color: #a50e58; font-size: 16px; margin-right: 530px"> | Relative measures</span>
@@ -1677,6 +1690,7 @@ $$
 :::
 ::: {.column width="50%"}
 
+<!--
 <div style="font-size: 18px; text-align: center;">
 $$
 P(\text{CHD} \mid \text{smoker+}) = \frac{95}{3000} =0.032
@@ -1693,11 +1707,11 @@ $$
 which can be expressed as __1.70\%__
 </div>
 
-
+-->
 
 :::
 ::: 
-
+<!--
 <div class="fragment" style="position: absolute; bottom: 100px;">
 <ul style="font-size: 22px; font-weight: 100;">
 <p  class="fragment" style="font-size: 24px; font-weight: 900;">Interpretation</p>
@@ -1705,7 +1719,7 @@ which can be expressed as __1.70\%__
 </li>
 </ul>
 </div>
-
+-->
 
 :::{.footer style="background-color: rgba(181, 101, 118, 0.3); color: rgb(84, 84, 84); padding: 10px; padding-left: 70px;text-align: left; font-size: 12px;"}
 <span style="font-weight: 900; color: rgb(84, 84, 84); display: inline;">MEASURES OF EFFECT</span>
