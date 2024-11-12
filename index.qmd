@@ -1134,10 +1134,37 @@ The first phrase is correct in statistical contexts (like odds ratios), while th
 <span style="color: #a50e58; font-size: 16px;"> | Relative measures</span>
 :::
 
+## {}
 
+<br>
+
+::: {.callout-important}
 ## Key Concept
 
-- Since the relative risk is a simple ratio, errors tend to occur when the terms "more" or "less" are used. 
+Since the relative risk is a simple ratio, errors tend to occur when the terms **"more"** or **"less"** are used.
+
+You will always be correct by saying:
+
+<ul style="list-style: disc; padding: 20px; margin: 0;text-align: center;">
+<li>"Those who had (name the exposure) had RR __'times the risk'__ compared to those who (did not have the exposure).“</li>
+<li>"The risk of (name the disease) among those who (name the exposure) was RR __'times as high as'__ the risk of (name the disease) among those who did not (name the exposure)."</li>
+</ul>
+:::
+
+<div style="position: absolute; bottom: 20px;font-size: 15px; right: 0;">
+Wayne W. LaMorte, MD, PhD, MPH, Boston University School of Public Health, https://sphweb.bumc.bu.edu/otlt/mph-modules/ep/ep713_association/
+</div>
+
+
+:::{.footer style="background-color: rgba(181, 101, 118, 0.3); color: rgb(84, 84, 84); padding: 10px; padding-left: 70px;text-align: left; font-size: 12px;"}
+<span style="font-weight: 900; color: rgb(84, 84, 84); display: inline;">MEASURES OF EFFECT</span>
+<span style="color: #a50e58; font-size: 16px;"> | Relative measures</span>
+:::
+
+<!--
+## Key Concept
+
+- Since the relative risk is a simple ratio, errors tend to occur when the terms **"more"** or **"less"** are used. 
 
 - You will always be correct by saying: 
 
@@ -1154,6 +1181,9 @@ Wayne W. LaMorte, MD, PhD, MPH, Boston University School of Public Health, https
 <span style="font-weight: 900; color: rgb(84, 84, 84); display: inline;">MEASURES OF EFFECT</span>
 <span style="color: #a50e58; font-size: 16px;"> | Relative measures</span>
 :::
+
+-->
+
 
 ## [QUIZ - RR]{style="color: #a50e58; font-size: 40px; font-weight: 900; text-align: center;"}
 
@@ -1174,8 +1204,14 @@ A cohort study investigated the association between high blood pressure and stro
 <span style="color: #a50e58; font-size: 16px;"> | Relative measures</span>
 :::
 
-## Key Concept: Odds and probability
 
+
+## {}
+
+<br>
+
+::: {.callout-important}
+## Key Concept: Odds and probability
 - __Probability (P)__ is the likelihood of the HI occurring The proportion ranges from 0 to 1 (0% to 100%)
 
 - __Odds__ represent the ratio of the probability of an event happening to the probability of it not happening. odds can take any non-negative value.
@@ -1186,7 +1222,10 @@ Odds = \frac{\text{P(health indicator)}}{1 - \text{P(health indicator)}}
 $$
 </div>
 
-- For example, if the probability of a HI happening is 0.2 (or 20%), the odds are: _0.2 / (1 - 0.2) = 0.25_
+- For example, if the probability of a HI happening is 0.2 (or 20%), the odds are: <br> _0.2 / (1 - 0.2) = 0.25_
+
+::: 
+
 
 ## Odds ratios (relative odds)
 
@@ -1207,6 +1246,9 @@ $$
 \text{Odds Ratio (OR)} = \frac{\text{Odds in exposed}}{\text{Odds in unexposed}}
 $$
 </div>
+
+
+
 
 :::{.footer style="background-color: rgba(181, 101, 118, 0.3); color: rgb(84, 84, 84); padding: 10px; padding-left: 70px;text-align: left; font-size: 12px;"}
 <span style="font-weight: 900; color: rgb(84, 84, 84); display: inline;">MEASURES OF EFFECT</span>
@@ -1683,4 +1725,152 @@ Measure of Effect - __Confounding__ - Measure of Association
 :::
 
 
+## Confounding
 
+- A situation where the studied relationship is distorted by the presence of another factor (aka confounder)
+- This create an spurious association.
+- _"In the presence of confounding, the old adage “association is not causation” holds even if the study population is arbitrarily large"_
+
+
+<div style="position: absolute; bottom: 20px;font-size: 15px; right: 0;">
+Source: Hernán MA, Robins JM (2020). Causal Inference: What If. Boca Raton: Chapman & Hall/CRC.</div>
+
+
+:::{.footer style="background-color: rgb(234, 172, 139); color: rgb(84, 84, 84); padding: 10px; padding-left: 70px;text-align: left; font-size: 12px;"}
+<span style="font-weight: 900; color: rgb(84, 84, 84); display: inline;">ASSOCIATION & CONFOUNDING</span>
+<span style="color: #a50e58; font-size: 16px; margin-right: 530px"> | Introduction</span>
+:::
+
+## Confounding
+
+<div style="position: absolute; top: 50px;">
+
+```{r}
+library(ggdag)
+library(ggplot2)
+theme_set(theme_dag())
+
+coords <- list(
+  x = c(y = 1.5, x = 0, z = .5),
+  y = c(y = 0, x = 0, z = .5)
+)
+
+  g <- dagify(
+  y ~ x + z,
+  x ~ z,
+  coords = coords,
+  
+  exposure = "x",
+  outcome = "y",
+  latent = "z",
+  labels = c("x" = "Exposure", "y" = "Outcome", "z" = "Confounder")
+)
+
+  g %>%
+  tidy_dagitty() %>%
+  dag_label(labels = c(
+    "x" = "Coffe\nintake",
+    "y" = "Heart attack",
+    "z" = "Smoking\nStatus"
+  )) %>%
+  ggplot(aes(x = x, y = y, xend = xend, yend = yend)) +
+  geom_dag_node() +
+  geom_dag_edges() +
+  geom_dag_point() +
+  geom_dag_text() +
+  geom_dag_label(
+    aes(label = label#, fill = label
+        ),
+   # fill = "black",
+    col= c("black", "black", "purple"),
+    show.legend = FALSE,
+    nudge_x = 0,nudge_y = -.155
+  ) +
+  theme_dag()
+
+```
+</div>
+
+<div style="position: absolute; bottom: 20px; font-size: 24px;">
+__X__: Exposure,  __Y__: Outcome, __Z__: Confounder
+
+</div>
+
+:::{.footer style="background-color: rgb(234, 172, 139); color: rgb(84, 84, 84); padding: 10px; padding-left: 70px;text-align: left; font-size: 12px;"}
+<span style="font-weight: 900; color: rgb(84, 84, 84); display: inline;">ASSOCIATION & CONFOUNDING</span>
+<span style="color: #a50e58; font-size: 16px; margin-right: 530px"> | Introduction</span>
+:::
+
+
+## Confounding
+
+```{r}
+
+# Load necessary libraries
+set.seed(123)  # Set seed for reproducibility
+library(dplyr)
+
+# Number of simulated individuals
+n <- 1000
+
+# Simulate coffee consumption (0 = no coffee, 1 = coffee drinker)
+coffee_consumption <- rbinom(n, 1, 0.5)  # 50% chance of drinking coffee
+
+# Simulate smoking status (0 = non-smoker, 1 = smoker)
+# Smokers are more likely to drink coffee, so we model this dependency
+smoking_status <- rbinom(n, 1, prob = 0.3 + 0.4 * coffee_consumption)  # Smokers more likely to drink coffee
+
+# Simulate heart disease (0 = no, 1 = yes)
+# The baseline log-odds of heart disease
+log_odds_baseline <- -2
+
+# Adjust heart disease log-odds based on coffee consumption and smoking
+# Coffee consumption OR = 1.5 (log OR ~ -0.09)
+# Smoking OR = 5 (log OR ~ 1.6094)
+log_odds <- log_odds_baseline + 
+  -0.09 * coffee_consumption +    # Coffee consumption effect on heart disease (unadjusted OR = 1.5)
+  1.6094 * smoking_status         # Smoking effect on heart disease (OR = 5)
+
+# Calculate probability of heart disease using the logistic function
+prob_heart_disease <- 1 / (1 + exp(-log_odds))  # Logistic function to convert log-odds to probability
+heart_disease <- rbinom(n, 1, prob_heart_disease)  # Simulate heart disease (0 or 1)
+
+# Combine into a data frame
+data <- data.frame(coffee_consumption, smoking_status, heart_disease)
+# Unadjusted logistic regression model
+unadjusted_model <- glm(heart_disease ~ coffee_consumption, data = data, family = binomial)
+
+# Adjusted logistic regression model (adjusting for smoking status)
+adjusted_model <- glm(heart_disease ~ coffee_consumption + smoking_status, data = data, family = binomial)
+
+
+unadjusted_model |>  gtsummary::tbl_regression(exponentiate = TRUE, label = coffee_consumption~"Caffe intake") |> gtsummary::as_gt() |> 
+   gt::tab_header(
+    title = gt::md("Unadjusted OR for the relationship between **Caffe intake** and **Heart attack**"),
+    subtitle = "In other words, no considering the smoking status"
+  )
+```
+
+
+<br>
+
+. . .
+
+```{r}
+adjusted_model |>  gtsummary::tbl_regression(exponentiate = TRUE, include ="coffee_consumption",label = coffee_consumption~"Caffe intake") |> gtsummary::as_gt() |> 
+     gt::tab_header(
+    title = gt::md("Ajusted OR for the relationship between **Caffe intake** and **Heart attack**"),
+    subtitle = "In other words, considering the smoking status"
+  )
+  
+
+```
+
+
+
+
+
+:::{.footer style="background-color: rgb(234, 172, 139); color: rgb(84, 84, 84); padding: 10px; padding-left: 70px;text-align: left; font-size: 12px;"}
+<span style="font-weight: 900; color: rgb(84, 84, 84); display: inline;">ASSOCIATION & CONFOUNDING</span>
+<span style="color: #a50e58; font-size: 16px; margin-right: 530px"> | Introduction</span>
+:::
