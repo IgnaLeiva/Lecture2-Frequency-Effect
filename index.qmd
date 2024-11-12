@@ -1,4 +1,8 @@
 ---
+#title: "jdcjhjdhjdc!"
+#author: 
+#  name: "Ignacio leiva"
+#  email: "IgnacioAndres.LeivaEscobar@med.uni-heidelberg.de"
 format: 
   revealjs:
       theme: [assets/ukhd.scss]
@@ -16,11 +20,14 @@ embed-resources: true
 
 ![](images/logo.png){.relative top="0" width="200" height="200"}  
 
-<div style="position: absolute; font-size: 50px; font-weight: 200; font-family: Arial, sans-serif; bottom: 215px; color: #26547c">
+<div style="position: absolute; font-size: 50px; font-weight: 200; font-family: Arial, sans-serif; bottom: 215px; color: #26547c;">
 Measures in (Pharmaco)Epidemiology
 </div>
-<div style="position: absolute; font-size: 30px; font-weight: 100; font-family: Arial, sans-serif; bottom: 180px; color: #8d99ae">
+<div style="position: absolute; font-size: 30px; font-weight: 100; font-family: Arial, sans-serif; bottom: 180px; color: #8d99ae;">
 Ignacio Leiva, MSc Epi/Health Data Science
+</div>
+<div style="position: absolute; font-size: 18px; font-weight: 100; font-family: Arial, sans-serif; bottom: 158px;">
+<a style="color: #8b8c89;" href= "mailto: IgnacioAndres.LeivaEscobar@med.uni-heidelberg.de"> IgnacioAndres.LeivaEscobar@med.uni-heidelberg.de </a>
 </div>
 
 ## Today's content
@@ -137,19 +144,18 @@ Ignacio Leiva, MSc Epi/Health Data Science
 
 ## Recap
 
-<div style= "position: absolute; top: 65px; left: 0px; font-size: 28px; font-weight: 100;">Key concepts for today</div>
+<div style= "position: absolute; top: 65px; left: 0px; font-size: 28px; font-weight: 100;">Key concept for today</div>
 
 <br>
 <br>
 
 ::: {.callout-note title="Important"}
-Correlation is not causation!
+Correlation is NOT causation!
 :::
 
 
 :::{.footer style="background-color: rgb(56,145,164, 0.6);  padding: 10px; padding-left: 70px;text-align: left; font-size: 14px;"}
 <span style="font-weight: 900; color: white; display: inline;">INTRODUCTION</span><span style="color: #a50e58; font-size: 14px;"> | Recap</span>
-
 :::
 
 ## Further classification of studies
@@ -161,19 +167,15 @@ Correlation is not causation!
   ![](images/studies.png)
 </div>
 
-
 :::{.footer style="background-color: rgb(56,145,164, 0.6);  padding: 10px; padding-left: 70px;text-align: left; font-size: 14px;"}
 <span style="font-weight: 900; color: white; display: inline;">INTRODUCTION</span><span style="color: #a50e58; font-size: 14px;"> | Recap</span>
-
 :::
 
 ## Epidemiology
 
 <div style= "position: absolute; top: 57px; left: 0px; font-size: 28px; font-weight: 100; color: #a50e58">Definition</div>
-
 <div style="position: absolute; display: flex; gap: 100px; bottom: 260px; text-align: center; justify-content: center; align-items: center; width: 100%;">
 
-				
 <!--	Box 1 -->
 <div>
 <div class="info-box" style="
@@ -233,9 +235,9 @@ Correlation is not causation!
 </div> 
 
 ::: {.notes}
-Descriptive epi:  generate hypotheses about associations between exposures and outcomes 
+Descriptive epi: generate hypotheses about associations between exposures and outcomes 
 
-Analytical epi:   more rigorously assess hypotheses by drawing samples of people and comparing groups to determine whether health outcomes differ based on exposure status. It also helps to
+Analytical epi: more rigorously assess hypotheses by drawing samples of people and comparing groups to determine whether health outcomes differ based on exposure status. It also helps to
 quantify the strength of the association
 
 Epidemiology is the study of the distribution and determinants of disease and other health-related outcomes within populations. As the basic science of public health, epidemiologic studies can describe patterns of disease within specific populations (descriptive epidemiology) or investigate etiology and risk factors for health outcomes (analytic epidemiology). A core feature of analytic epidemiology is the presence of an appropriate comparison group. Using analytic epidemiologic methods, we can investigate hypotheses about exposure-outcome relationships by comparing exposure status between groups of people. A sound understanding of epidemiologic principles enables health care providers to consider if the effects of an exposure could warrant changes in clinical practice, treatment protocols, or community program management. In this article, we describe several measures of association frequently encountered in analytic epidemiology and discuss factors to consider when interpreting clinical research.
@@ -262,7 +264,7 @@ We search for the determinants of health outcomes, first, by relying on descript
   padding-left: 20px; /* Optionally, use padding to add space inside */
 ">
   <p style="font-size: 30px; font-weight: 400; color: rgb(84, 84, 84);">MEASURES OF FREQUENCY</p>
-<p style="font-size: 20px; font-weight: 100; color: #a50e58;">Tools to describe and compared populations, tack development over time, determine potential associations of exposures with health outcomes (aka: Measures of Morbidity)</p>
+<p style="font-size: 20px; font-weight: 100; color: #a50e58;">Tools to describe and compare populations, track development over time, and determine potential associations of exposures with health outcomes (aka Measures of Morbidity)</p>
 </div>
 
 :::{.footer}
@@ -272,9 +274,9 @@ We search for the determinants of health outcomes, first, by relying on descript
 
 <br>
 
-- Prevalence indicates what proportion of the population is affected by the disease at specific time
+- Prevalence indicates what proportion of the population is affected by the disease at a specific time
 
-- __Point prevalence:__ “right know”, “snaptshot”. Single point in time. Describe the current situation or to compare to previous situations (track development over time)
+- __Point prevalence:__ “right now”, “snapshot”. A single point in time. Describe the current situation or compare it to previous situations (track development over time)
 
 - __Period prevalence:__ “within 6 months”. Single time period
 
@@ -307,7 +309,7 @@ doi:10.1002/pds.5717
 
 <br><br><br>
 
-<div style="font-size: 20px; color: #a50e58;">
+<div style="font-size: 30px; color: #a50e58;">
 $$ P = \frac{\text{Total Population}}{\text{Total Population at a Specific Time}}$$
 </div>
 
@@ -343,7 +345,7 @@ __Indicate which type of prevalence the sentence refers to:__
 ## Properties & Limitations
 
 <ul style="list-style: disc; padding: 0; margin: 20px; text-align: left; font-size: 30px;">
-<li>Important measure of the 'Burden of Disease’</li>
+<li>Important measure of the 'Burden of Disease'</li>
 
 <li>Planning in the health system (in combination with demographic data projections possible)</li>
 
@@ -376,7 +378,8 @@ Cumulative Incidence
 
 <div style="font-size: 20px; color: #a50e58; font-weight: 100;">
 $$ 
-CI = \frac{\text{Total Population}}{\text{Total Population at a Specific Time}}$$
+CI = \frac{\text{Total Population}}{\text{Total Population at a Specific Time}}
+$$
 
 </div>
 
@@ -395,7 +398,8 @@ Incidence Rate
 
 <div style="font-size: 20px; color: #a50e58;">
 
-$$ IR = \frac{\text{Total Population}}{\text{Total Person−time at risk}}
+$$ 
+IR = \frac{\text{Total Population}}{\text{Total Person−time at risk}}
 $$
 </div>
 
@@ -403,7 +407,7 @@ $$
 __Characteristics__
 <li>Ratio</li>
 <li>Units of time (e.g., per person-year)</li>
-<li>Time that are a person contributes (risk period)</li>
+<li>Time that a person contributes (risk period)</li>
 <li>Accounts for varying follow-up times</li>
 <li>Speed at which new cases occur</li>
 </ul>
@@ -439,13 +443,13 @@ __Five-year__ cumulative incidence of recurrent colorectal cancer 21%. __21 out 
 Incidence Rate
 
 <div style="font-size: 25px;">
-The value of the IR depends on the time unit being used. E.g. 100 events per 1 person-year.
+The value of the IR depends on the time unit being used. E.g., 100 events per 1 person-year.
 </div>
 
 <ul style="list-style: disc; padding: 0; margin: 20px; text-align: left; font-size: 25px;">
 <li>__IR__ = 100 per Person-Years</li>
 <li>__IR__ = 10 000 per 100 Person-Years</li>
-<li>__IR__ = 8.33 per Personen-Monat</li>
+<li>__IR__ = 8.33 per Person-Month<</li>
 </ul>
 
 :::
@@ -453,8 +457,8 @@ The value of the IR depends on the time unit being used. E.g. 100 events per 1 
 
 <div style="position: absolute; font-size: 20px; background: rgb(56, 145, 165, 0.15); margin: 20px; padding: 10px;  bottom: 50px;left: 0; right: 0; border-radius: 12px 12px 12px 12px; bottom: 50px;">
 <ul style="list-style: disc; margin-left: 100px;">
-<li>Incidence is always longitudinal either prospective or retrospective</li>
-<li>Always involves aspect of time even if used as proportion (e.g. within 5-year)</li>
+<li>Incidence is always longitudinal, either prospective or retrospective</li>
+<li>Always involves an aspect of time even if used as a proportion (e.g. within 5 years)</li>
 </ul>
 
 </div>
@@ -524,12 +528,11 @@ Assuming when <span style="color: red;">__X__</span>  becomes a case, it is no l
 
 <div style="position: absolute; font-size: 25px; margin: 20px; padding: 10px;  bottom: 100px;left: 0; right: 0;  bottom: 50px;">
 <ul style="list-style: disc; margin-left: 100px;">
-__Which of the following statement are correct:__
+__Which of the following statement(s) is/are correct:__
 <li>The cumulative incidences for figures A and B are equal</li>
 <li>The incidence rates for figures A and B are equal</li>
 <li>The cumulative incidence and incidence rate for Figure A differ</li>
-<li>The cumulative incidence and incidence rate for Figure B differ
-</li>
+<li>The cumulative incidence and incidence rate for Figure B differ</li>
 </ul>
 </div>
 
@@ -570,7 +573,7 @@ Paradoxical situation: Since the prevalence reflects both the incidence rate and
 
 
 <div style="position: absolute; text-align: center; top: 50px; right: 0; left: 0;">
-  ![](images/img_incid_prev_01.jpg){.relative top="0" width="410" height="300"}  
+  ![](images/img_incid_prev_01.jpg){.relative top="0" width="430" height="300"}  
 </div>
 
 <div style="position: absolute; font-size: 25px; color: #4D1354; bottom: 200px; left: 280px;">
@@ -578,7 +581,7 @@ __Prevalence__= Total X Duration of the disease
 </div>
 
 <div style="position: absolute; bottom: 20px;font-size: 15px; right: 0;">
-Source: Gordis L. Epidemiology. 6th ed. Philadelphia, PA: Elsevier Saunders; 2019
+Source: Gordis L. Epidemiology. 6th ed. Philadelphia, PA: Elsevier Saunders; 2019
 </div>
 
 
@@ -594,7 +597,7 @@ __Which of the following statement are correct:__
 <ul style="list-style: num; margin-left: 100px;">
 <li>Approximately 1.2% of men in this age group in Germany will experience their first heart attack within the next year.</li>
 <li>About 13% of German women (a sample) reported having experienced migraines at some point in 2021</li>
-<li>Lifetime risk of developing breast cancer for women in Germany is around 12.5%.</li>
+<li>The lifetime risk of developing breast cancer for women in Germany is around 12.5%.</li>
 <li>Approximately 67% of adults in Germany are classified as overweight (BMI \> 25).</li>
 <li>It is estimated that around 30% of older adults in Germany suffer from undiagnosed hypertension</li>
 </ul>
@@ -611,7 +614,7 @@ __Which of the following statement are correct:__
 </div>
 
 <br><br>
-Age standardization (or age adjustment [direct]) is a technique used in epidemiology and public health to adjust for differences in age distribution when comparing two or more populations.
+Age standardisation (or age adjustment [direct]) is a technique used in epidemiology and public health to adjust for differences in age distribution when comparing two or more populations.
 
 <div style="position: absolute; font-size: 28px; margin: 20px; padding: 10px;  top: 320px;left: 0; right: 0;  bottom: 50px;">
 <ul style="list-style: disc; margin-left: 100px;">
@@ -714,7 +717,7 @@ __Group 1__= (800 X 3 + 800 X 6 + 800 X 8.75 + 800 X 10 + 800 X 12.5) / 4000 = 8
 <br>
 __Definition__
 
-- Health indicator (HI): Disease or side efefct
+- Health indicator (HI): Disease or side effect
 - Assume a binary health indicator
 - Risk = Incidence = proportion
 
@@ -737,7 +740,8 @@ Risk in the __exposed__ <br>
 <br>
 
 <div class="info-box" style="height: 80px; width: 320px; border-radius: 12px 12px 12px 12px; font-size: 24px;border: 1px solid  #0a9396;font-weight: 100;">
-Risk in the __exposed__
+Risk in the __unexposed__
+<span style="color: #0a9396; font-weight: 100; font-size: 20px;"> E.g., Non-smokers</span>
 </div>
 
 :::
@@ -752,7 +756,7 @@ We are interested in whether exposure (e.g., a drug, behaviour, or environmental
 <p style="font-size: 24px; font-weight: 900;">WHERE THE DATA COME FROM?</p>
 <p style="font-size: 22px; font-weight: 100;">
 Often using data from case-control or cohort studies. 
-The type of measure of effect is limitated by the study design</p>
+The type of measure of effect is limited by the study design</p>
 
 :::
 :::
@@ -774,8 +778,9 @@ __Relative Measures__
 
 <br><br>
 
-<div style="font-size: 20px; color: #a50e58; font-weight: 100;">
-$$ \frac{\text{Health indicator risk in exposed}}{\text{Health indicator risk in unexposed}}
+<div style="font-size: 30px; color: #a50e58; font-weight: 100;">
+$$ 
+\frac{\text{Health indicator risk in exposed}}{\text{Health indicator risk in unexposed}}
 $$
 </div>
 
@@ -787,7 +792,7 @@ __Absolute Measures__
 
 <br><br>
 
-<div style="font-size: 20px; color: #a50e58;">
+<div style="font-size: 30px; color: #a50e58;">
 
 $$ 
 \left( \begin{array}{c} \text{Health indicator} \\ \text{risk in exposed} \end{array} - \begin{array}{c} \text{Health indicator} \\ \text{risk in unexposed} \end{array} \right)
@@ -804,8 +809,7 @@ $$
 
 ## [Essential Information]{style="color:#a50e58;"}
 
-<p>Winterfell population:<p> <p style="font-size: 24px; font-weight:100;">10000 inhabitant were selected and divided based on their smoking status, they were follow over 1-year period to evaluate whether individual developed coronary heart disease (CHD).</p>
-
+<p>Winterfell population:<p> <p style="font-size: 24px; font-weight:100;">10000 inhabitants were selected and divided based on their smoking status; they were followed over a 1-year period to evaluate whether individuals developed coronary heart disease (CHD).</p>
 . . .
 
 ::: {.columns}
@@ -938,7 +942,7 @@ data %>%
 :::
 :::
 
-<div style="position: absolute; font-size= 18px; bottom:40px;">
+<div style="position: absolute; font-size: 23px; bottom:60px;">
 
 $$ 
 Risk_{smokers} =\frac{95}{3000} = 0.0317
@@ -957,7 +961,7 @@ $$
 
 ## Relative Risk
 
-“What is the ratio of the risk of disease in exposed individuals to the risk of disease in unexposed individuals?”
+“What is the ratio of the risk (of disease) in exposed individuals to the risk of disease in unexposed individuals?”
 <br><br><br>
 $$ 
 \boldsymbol{\text{Relative risk}} =\frac{\text{Risk in exposed}}{\text{Risk in unexposed}}
@@ -984,11 +988,12 @@ Rate ratios when using Incidence Rates
 
 ![](images/table1.png)
 
+<div style="position: absolute; font-size: 23px; bottom:80px;">
 
 $$
 \text{Relative Risk (RR)} = \frac{\text{Risk in exposed}}{\text{Risk in unexposed}} = \frac{P(\text{HI} | E+)}{P(\text{HI} | E-)} = \frac{\frac{a}{a + b}}{ \frac{c}{c + d}}
 $$
-
+</div>
 
 :::{.footer style="background-color: rgba(181, 101, 118, 0.3); color: rgb(84, 84, 84); padding: 10px; padding-left: 70px;text-align: left; font-size: 12px;"}
 <span style="font-weight: 900; color: rgb(84, 84, 84); display: inline;">MEASURES OF EFFECT</span>
@@ -996,7 +1001,7 @@ $$
 :::
 
 <div style="position: absolute; bottom: 20px;font-size: 15px; right: 0;">
-Source: Gordis L. Epidemiology. 6th ed. Philadelphia, PA: Elsevier Saunders; 2019
+Source: Gordis L. Epidemiology. 6th ed. Philadelphia, PA: Elsevier Saunders; 2019
 </div>
 
 ## Relative risk interpretation
@@ -1009,22 +1014,22 @@ Source: Gordis L. Epidemiology. 6th ed. Philadelphia, PA: Elsevier Saunders; 20
 <table style="width:100%; font-size:20px;border: 2px solid #38A3A5;">
   <thead>
     <tr>
-      <th colspan="2" style="width:30%; background: #38A3A5; color: white;">Interpreteing relative risk of the health indicator
+      <th colspan="2" style="background: #38A3A5; color: white;">Interpreteing relative risk of the health indicator
 </th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td style="border: none; text-align: center;">RR = 1</td>
-      <td style="border: none;">Risk in exposed equal to risk in unexposed (no association); the null</td>
+      <td style="width:30%; border: none; text-align: center;">RR = 1</td>
+      <td style="border: none;">Risk in the exposed equal to risk in the unexposed (no association); the null</td>
     </tr>
     <tr>
       <td style="border: none;">RR > 1</td>
-      <td style="border: none;">Risk in exposed greater than risk in unexposed (positive association; possible causal)</td>
+      <td style="border: none;">Risk in the exposed is greater than risk in the unexposed (positive association; possible causal)</td>
     </tr>
     <tr>
       <td style="border: none;">RR < 1</td>
-      <td style="border: none;">Risk in exposed less than risk in unexposed (negative association; possible protective)</td>
+      <td style="border: none;">Risk in the exposed is less than the risk in unexposed (negative association; possible protective)</td>
     </tr>
   </tbody>
 </table>
@@ -1107,7 +1112,7 @@ $$
 <div class="fragment" style="position: absolute; bottom: 100px;">
 <p style="font-size: 24px; font-weight: 900;">Interpretation</p>
 <ul style="font-size: 22px; font-weight: 100;">
-<li class="fragment">Smokers have 2.13 times as high as risk of get CHD compared to
+<li class="fragment">Smokers have 2.13 times as high as risk of getting CHD compared to
 those non-smokers over 1 year</li>
 <li class="fragment">The risk of CHD among smokers was 2.13 times as high as the risk of
 CHD among non-smokers</li>
@@ -1141,7 +1146,8 @@ The first phrase is correct in statistical contexts (like odds ratios), while th
 ::: {.callout-important}
 ## Key Concept
 
-Since the relative risk is a simple ratio, errors tend to occur when the terms **"more"** or **"less"** are used.
+
+As relative risk is a straightforward ratio, errors arise when the terms **"more"** or **"less"**  are applied.
 
 You will always be correct by saying:
 
@@ -1212,11 +1218,11 @@ A cohort study investigated the association between high blood pressure and stro
 
 ::: {.callout-important}
 ## Key Concept: Odds and probability
-- __Probability (P)__ is the likelihood of the HI occurring The proportion ranges from 0 to 1 (0% to 100%)
+- __Probability (P)__ is the likelihood of the HI occurring. Proportions range from 0 to 1 (0% to 100%)
 
-- __Odds__ represent the ratio of the probability of an event happening to the probability of it not happening. odds can take any non-negative value.
+- __Odds__ represent the ratio of the probability of an event happening to the probability of it not happening. Odds can take any non-negative value.
 
-<div style="font-size: 22px;">
+<div style="font-size: 20px;">
 $$
 Odds = \frac{\text{P(health indicator)}}{1 - \text{P(health indicator)}}
 $$
@@ -1230,12 +1236,12 @@ $$
 ## Odds ratios (relative odds)
 
 <ul style="list-style: num; padding: 0; margin: 20px; text-align: left; font-size: 28px;">
-  <li>To calculate the RR we need to know the incidece of the HI in both groups (this can be obtained from a cohort study)
+  <li>To calculate the RR we need to know the incidence of the HI in both groups (this can be obtained from a cohort study)
 </li>
-  <li>In case-control we do not know the incidence because we start with disease people (cases).</li>
-  <li>OR under certain conditions can be a very good estimate of the relative risk
-</li> <!--this is the correct--->
-  <li>This measure is also used in cross-secctional studies
+  <li>In case-control, we do not know the incidence because we start with disease people (cases).</li>
+  <li>OR, under certain conditions, can be a very good estimate of the relative risk
+</li> <!--this is the correct-->
+  <li>This measure is also used in cross-sectional studies
 </li>
 <li>Their interpretation is similar to the RR (related to the value)
 </li>
@@ -1256,7 +1262,7 @@ $$
 :::
 
 ::: {.notes}
-cross-secctional studies
+cross-sectional studies
 Cross-sectional studies measure both exposure and outcome at the same point in time. These studies capture a “snapshot” of the population, meaning they assess prevalence (the proportion of individuals with a condition or exposure at a specific time) rather than incidence (the occurrence of new cases over time).
 • Since incidence is not measured, you cannot directly compute the relative risk (RR), which requires information about the rate at which new cases occur over time (incidence).
 
@@ -1285,7 +1291,7 @@ __Cohort Studies__
 __Case-control study__
 <ul style="font-size: 18px;">
 <li>Cases and controls selected first</li>
-<li>TThen, measure (evaluate) past exposure</li>
+<li>Then, measure (evaluate) past exposure</li>
 </ul>
 </div>
 
@@ -1340,17 +1346,17 @@ Thus, interestingly, ad/bc represents the odds ratio (or relative odds) in both 
   <tbody>
     <tr>
       <td style="border: none; text-align: center;">OR = 1</td>
-      <td style="border: none;">Odds in exposed equal to odds in unexposed (no association); the null
+      <td style="border: none;">Odds in the exposed equal to odds in the the unexposed (no association); the null
 </td>
     </tr>
     <tr>
       <td style="border: none;">OR > 1</td>
-      <td style="border: none;">Odds in exposed greater than odds in unexposed (positive association)
+      <td style="border: none;">Odds in the exposed is greater than odds in the unexposed (positive association)
 </td>
     </tr>
     <tr>
       <td style="border: none;">OR < 1</td>
-      <td style="border: none;">Odds in exposed less than odds in unexposed (negative association)
+      <td style="border: none;">Odds in the exposed is less thanodds in the unexposed (negative association)
 </td>
     </tr>
   </tbody>
@@ -1418,7 +1424,7 @@ $$
 <ul style="font-size: 22px; font-weight: 100;">
 <li class="fragment">The odds of developing CHD among the smokers is 2.13 times as high compared with non-smokers over 1 year </li>
 
-<li class="fragment"> __If case-control:__ The odds of being exposed to smoking among cases (patients with CHD) is 2.11 times as high compared to the controls (patients without CHD). (Still can be interpreted in the other way around)
+<li class="fragment"> __If case-control:__ The odds of being exposed to smoking among cases (patients with CHD) is 2.11 times as high compared to the controls (patients without CHD). (Still can be interpreted the other way around)
 </li>
 </ul>
 </div>
@@ -1433,8 +1439,8 @@ $$
 When the following three conditions are met:
 
 
-- When the cases studied are representative, with regard to history of exposure, of all people with the disease in the population from which the cases were drawn.
-- When the controls studied are representative, with regard to history of exposure, of all people without the disease in the population from which the cases were drawn.
+- When the cases studied are representative, concerning the history of exposure, of all people with the disease in the population from which the cases were drawn.
+- When the controls studied are representative, with regard to the history of exposure, of all people without the disease in the population from which the cases were drawn.
 - When the disease being studied does not occur frequently (Rarity assumption)
 
 
@@ -1498,10 +1504,10 @@ For example, if we are studying time to heart attack, the hazard at time t tells
 
 ## Absolute measures
 
-- Ratio measures are standar in epidemiology
-- Helps to quantify how much of the health idicator that occurs can be attributed to a certain exposure
-- Difference measures ara also frequent and importan measures for estimating public health risk
-- Indicates the potential por prevention if the exposure were mitigated
+- Ratio measures are standard in epidemiology
+- Helps to quantify how much of the health idicator that occurs can be attributed to a specific exposure
+- Difference measures are also frequent and important measures for estimating public health risk
+- Indicates the potential for prevention if the exposure were mitigated
 - It can address how much of the risk (incidence) of a HI can be prevented if we were able to mitigate the exposure
 
 :::{.footer style="background-color: rgba(181, 101, 118, 0.3); color: rgb(84, 84, 84); padding: 10px; padding-left: 70px;text-align: left; font-size: 12px;"}
@@ -1512,11 +1518,11 @@ For example, if we are studying time to heart attack, the hazard at time t tells
 ## Absolute risk difference
 <div style= "position: absolute; top: 65px; left: 0px; font-size: 28px; font-weight: 100;">Attributable risk</div>
 <br>
-- It represents the difference between the risks in two groups
+- It represents the difference between the risk in two groups
 - RD is a number between –1 and 1
 
 <br>
-<div style="font-size: 30px; color: #a50e58;">
+<div style="font-size: 25px; color: #a50e58;">
 
 $$ 
 \left( \begin{array}{c} \text{Health indicator} \\ \text{risk in exposed} \end{array} - \begin{array}{c} \text{Health indicator} \\ \text{risk in unexposed} \end{array} \right)
@@ -1543,8 +1549,8 @@ The question here is: How much of the health idicator that occurs ca be attribut
 ::: {.columns}
 ::: {.column width="70%"}
 - How much of the total risk is due to the exposure?
-- Expose and unexposed people have a background risk (CHD due to other factor different to smoking)
-- The total risk in the expose group is backgound risk + smoking risk
+- Expose and unexposed people have a background risk (CHD due to other factors different to smoking)
+- The total risk in the exposed group is background risk + smoking risk
 
 <div style="font-size: 30px; color: #a50e58;">
 
@@ -1579,7 +1585,7 @@ $$
 
 <div style="position: absolute; bottom: 110px;">
 <ul style="font-size: 24px; font-weight: 100;">
-<li>A measure that combines RD and the risk among the exposed (e.g. prevalence)</li>
+<li>A measure that combines RD and the risk among the exposed</li>
 <li> What proportion of the risk in the exposed persons is due to the exposure?</li>
 <li>Express the most that we can hope to accomplish in reducing the risk of the disease if we completely eliminate the exposure</li>
 <li>Clinicians may be more interested in AR in the exposed group</li>
@@ -1697,10 +1703,6 @@ which can be expressed as __1.70\%__
 <p  class="fragment" style="font-size: 24px; font-weight: 900;">Interpretation</p>
 <li class="fragment">Smokers have a 1.70% higher risk of developing CHD compared to non-smokers. In other words, for every 100 individuals, about 1.7 additional (more incidence) cases of CHD occur in smokers than in non-smokers, which are attributable to the fact that these people smoke.
 </li>
-<p class="fragment" style="font-size: 22px; font-weight: 900;">Interpretation focused on the exposed group</p>
-<li class="fragment">The risk of CHD among smokers was 2.13 times as high as the risk of
-CHD among non-smokers</li>
-
 </ul>
 </div>
 
@@ -1729,7 +1731,7 @@ Measure of Effect - __Confounding__ - Measure of Association
 
 - A situation where the studied relationship is distorted by the presence of another factor (aka confounder)
 - This create an spurious association.
-- _"In the presence of confounding, the old adage “association is not causation” holds even if the study population is arbitrarily large"_
+- Again: _"In the presence of confounding, association is not causation"_
 
 
 <div style="position: absolute; bottom: 20px;font-size: 15px; right: 0;">
@@ -1740,6 +1742,10 @@ Source: Hernán MA, Robins JM (2020). Causal Inference: What If. Boca Raton: Cha
 <span style="font-weight: 900; color: rgb(84, 84, 84); display: inline;">ASSOCIATION & CONFOUNDING</span>
 <span style="color: #a50e58; font-size: 16px; margin-right: 530px"> | Introduction</span>
 :::
+
+
+
+
 
 ## Confounding
 
@@ -1866,11 +1872,11 @@ adjusted_model |>  gtsummary::tbl_regression(exponentiate = TRUE, include ="coff
 
 ```
 
-
-
-
-
 :::{.footer style="background-color: rgb(234, 172, 139); color: rgb(84, 84, 84); padding: 10px; padding-left: 70px;text-align: left; font-size: 12px;"}
 <span style="font-weight: 900; color: rgb(84, 84, 84); display: inline;">ASSOCIATION & CONFOUNDING</span>
 <span style="color: #a50e58; font-size: 16px; margin-right: 530px"> | Introduction</span>
 :::
+
+## Q & A
+
+
