@@ -578,7 +578,7 @@ Paradoxical situation: Since the prevalence reflects both the incidence rate and
 </div>
 
 <div style="position: absolute; font-size: 25px; color: #4D1354; bottom: 200px; left: 280px;">
-__Prevalence__= Total X Duration of the disease
+__Prevalence__= Incidence X Duration of the disease
 </div>
 
 <div style="position: absolute; bottom: 50px;font-size: 15px; right: 0;">
