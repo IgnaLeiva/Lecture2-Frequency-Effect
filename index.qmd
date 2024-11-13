@@ -527,7 +527,7 @@ Assuming when <span style="color: red;">__X__</span>  becomes a case, it is no l
   ![](images/img_incidence_02.jpg){.relative top="0" width="410" height="250"}  
 </div>
 
-<div style="position: absolute; font-size: 25px; margin: 20px; padding: 10px;  bottom: 100px;left: 0; right: 0;  bottom: 50px;">
+<div style="position: absolute; font-size: 25px; margin: 20px; padding: 10px;  bottom: 160px;left: 0; right: 0;  bottom: 50px;">
 <ul style="list-style: disc; margin-left: 100px;">
 __Which of the following statement(s) is/are correct:__
 <li>The cumulative incidences for figures A and B are equal</li>
@@ -537,7 +537,7 @@ __Which of the following statement(s) is/are correct:__
 </ul>
 </div>
 
-<div style="position: absolute; bottom: 20px;font-size: 15px; right: 0;">
+<div style="position: absolute; bottom: 50px;font-size: 15px; right: 0;">
 Source: Gordis L. Epidemiology. 6th ed. Philadelphia, PA: Elsevier Saunders; 2019
 </div>
 
@@ -581,7 +581,7 @@ Paradoxical situation: Since the prevalence reflects both the incidence rate and
 __Prevalence__= Total X Duration of the disease
 </div>
 
-<div style="position: absolute; bottom: 20px;font-size: 15px; right: 0;">
+<div style="position: absolute; bottom: 50px;font-size: 15px; right: 0;">
 Source: Gordis L. Epidemiology. 6th ed. Philadelphia, PA: Elsevier Saunders; 2019
 </div>
 
@@ -989,7 +989,7 @@ Rate ratios when using Incidence Rates
 
 ![](images/table1.png)
 
-<div style="position: absolute; font-size: 23px; bottom:80px;">
+<div style="position: absolute; font-size: 23px; bottom:120px;">
 
 $$
 \text{Relative Risk (RR)} = \frac{\text{Risk in exposed}}{\text{Risk in unexposed}} = \frac{P(\text{HI} | E+)}{P(\text{HI} | E-)} = \frac{\frac{a}{a + b}}{ \frac{c}{c + d}}
@@ -1001,7 +1001,7 @@ $$
 <span style="color: #a50e58; font-size: 16px;"> | Relative measures</span>
 :::
 
-<div style="position: absolute; bottom: 20px;font-size: 15px; right: 0;">
+<div style="position: absolute; bottom: 50px;font-size: 15px; right: 0;">
 Source: Gordis L. Epidemiology. 6th ed. Philadelphia, PA: Elsevier Saunders; 2019
 </div>
 
@@ -1166,7 +1166,7 @@ You will always be correct by saying:
 </ul>
 :::
 
-<div style="position: absolute; bottom: 20px;font-size: 15px; right: 0;">
+<div style="position: absolute; bottom: 50px;font-size: 15px; right: 0;">
 Wayne W. LaMorte, MD, PhD, MPH, Boston University School of Public Health, https://sphweb.bumc.bu.edu/otlt/mph-modules/ep/ep713_association/
 </div>
 
@@ -1727,11 +1727,24 @@ which can be expressed as __1.70\%__
 :::
 
 ## Which one we should use
-gggg
 
-## {}
+<div style="text-align: center;">
+![](images/imagespaper1.png){.relative width="70%"}
+</div>
 
-<div style="position: absolute; top: 250px;">
+<div style="text-align: center;">
+![](images/imagepaper2.png){.relative width="70%"}
+</div>
+
+<div style="position: absolute; bottom: 50px;font-size: 15px; right: 0;">
+doi: 10.1093/ndt/gfw465
+</div>
+
+
+
+## Confounding
+
+<div style="position: absolute; top: 250px; text-align: center;">
 Measure of Effect - __Confounding__ - Measure of Association
 </div>
 
@@ -1748,7 +1761,7 @@ Measure of Effect - __Confounding__ - Measure of Association
 - Again: _"In the presence of confounding, association is not causation"_
 
 
-<div style="position: absolute; bottom: 20px;font-size: 15px; right: 0;">
+<div style="position: absolute; bottom: 100px;font-size: 15px; right: 0;">
 Source: Hernán MA, Robins JM (2020). Causal Inference: What If. Boca Raton: Chapman & Hall/CRC.</div>
 
 
@@ -1811,7 +1824,7 @@ coords <- list(
 ```
 </div>
 
-<div style="position: absolute; bottom: 20px; font-size: 24px;">
+<div style="position: absolute; bottom: 70px; font-size: 24px;">
 __X__: Exposure,  __Y__: Outcome, __Z__: Confounder
 
 </div>
